@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const txtSlice = createSlice({
   name: "txt",
   initialState: { Who:"",What:"",When:"",Where:""},
