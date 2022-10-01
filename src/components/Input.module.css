@@ -1,0 +1,67 @@
+.form {
+  width: 100%;
+}
+
+.form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  display: block;
+  width: 99%;
+  border: 1px solid #ccc;
+  font: inherit;
+  line-height: 1.5rem;
+  padding: auto;
+}
+
+.form input:focus {
+  outline: none;
+  background: #cccdfe;
+  border-color: #250093;
+}
+
+.button {
+  font-size: large;
+  padding: 0.5rem 1.5rem;
+  border: 1px rgb(1, 6, 74);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 4px rgb(18, 18, 18);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background: rgb(184, 183, 183);
+  border-color: rgb(57, 57, 57);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
+.par {
+  text-align: center;
+}
+.butonnavi {
+  padding: 0.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .butonnavi {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
