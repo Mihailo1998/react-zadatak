@@ -2,14 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const txtSlice = createSlice({
   name: "txt",
-  initialState: {Who:"",What:"",When:"",Where:""},
+  initialState: { Who:"",What:"",When:"",Where:""},
   reducers: {
     textSave(state, action) {
-      state.initialState=action.payload;
       console.log(action);
+      return {...state,...action.payload};
+      
     },
-    resetTxt(state) {
-
+    resetTxt(state,action) {
+      console.log(action);
+      return {...state,...action.payload};
     },
   },
 });

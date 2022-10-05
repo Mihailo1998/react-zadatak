@@ -25,6 +25,7 @@
 
 .par{
   text-align: center;
+  font-size: large;
 }
 
 @media (max-width: 600px) {

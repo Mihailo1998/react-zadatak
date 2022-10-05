@@ -11,7 +11,7 @@ const Input = () => {
   const showWhat = useSelector((state) => state.qc.qcWhatIsVis);
   const showWhen = useSelector((state) => state.qc.qcWhenIsVis);
   const showWhere = useSelector((state) => state.qc.qcWhereIsVis);
-
+  
   const [error, setError] = useState();
   const [enteredTextWho, setEnteredTextWho] = useState("");
   const [enteredTextWhat, setEnteredTextWhat] = useState("");
@@ -64,7 +64,8 @@ const Input = () => {
         Who:enteredTextWho,
         What:enteredTextWhat,
         When:enteredTextWhen,
-        Where:enteredTextWhere}
+        Where:enteredTextWhere
+        }
       )
     );
     dispatch(uiActions.toggle());
